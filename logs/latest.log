@@ -1,0 +1,61 @@
+[00:10:44] [Server thread/INFO]: Stopping server
+[00:10:44] [JLine Shutdown Hook/WARN]: [org.jline] Task failed
+java.io.IOException: Error executing '/data/data/com.termux/files/usr/bin/stty -a': stty: 'standard input': I/O error
+	at org.jline.utils.ExecHelper.exec(ExecHelper.java:48) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.exec.ExecPty.doGetConfig(ExecPty.java:177) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.exec.ExecPty.getAttr(ExecPty.java:91) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.exec.ExecPty.doSetAttr(ExecPty.java:97) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.AbstractPty.setAttr(AbstractPty.java:48) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.AbstractPosixTerminal.doClose(AbstractPosixTerminal.java:79) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.PosixSysTerminal.doClose(PosixSysTerminal.java:98) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.AbstractTerminal.close(AbstractTerminal.java:102) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.utils.ShutdownHooks.runTasks(ShutdownHooks.java:53) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.utils.ShutdownHooks.access$000(ShutdownHooks.java:21) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.utils.ShutdownHooks$1.run(ShutdownHooks.java:34) ~[jline-terminal-3.27.1.jar:?]
+[00:10:44] [Server console handler/ERROR]: Caught previously unhandled exception :
+java.io.IOError: java.io.IOException: Error executing '/data/data/com.termux/files/usr/bin/stty -a': stty: 'standard input': I/O error
+	at org.jline.terminal.impl.AbstractPosixTerminal.setAttributes(AbstractPosixTerminal.java:57) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:729) ~[jline-reader-3.20.0.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468) ~[jline-reader-3.20.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:158) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:141) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:109) ~[paper-1.21.4.jar:1.21.4-224-0cf7315]
+Caused by: java.io.IOException: Error executing '/data/data/com.termux/files/usr/bin/stty -a': stty: 'standard input': I/O error
+	at org.jline.utils.ExecHelper.exec(ExecHelper.java:48) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.exec.ExecPty.doGetConfig(ExecPty.java:177) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.exec.ExecPty.getAttr(ExecPty.java:91) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.exec.ExecPty.doSetAttr(ExecPty.java:97) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.AbstractPty.setAttr(AbstractPty.java:48) ~[jline-terminal-3.27.1.jar:?]
+	at org.jline.terminal.impl.AbstractPosixTerminal.setAttributes(AbstractPosixTerminal.java:55) ~[jline-terminal-3.27.1.jar:?]
+	... 5 more
+[00:10:44] [Server thread/INFO]: Saving players
+[00:10:44] [Server thread/INFO]: Saving worlds
+[00:10:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:10:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[00:10:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[00:10:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 5 entity chunks, 0 poi chunks in world 'world' in 0.03s
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[00:10:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 20 entity chunks, 0 poi chunks in world 'world_nether' in 0.05s
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[00:10:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[00:10:45] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[00:10:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:10:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:10:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:10:45] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:10:45] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[00:10:45] [Server thread/INFO]: All I/O tasks to complete
+[00:10:45] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[00:10:45] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
